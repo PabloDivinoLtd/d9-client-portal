@@ -17,7 +17,7 @@
             <nav id="primary-menu">
 
                 <ul class="one-page-menu">
-                    <li><a href="#" data-href="#section-buy"><div>Login</div></a></li>
+                    <li><a href="<?php echo base_url('login');?>" class="loginBtn" title="Jobs openings">Login</a></li>
                 </ul>
 
             </nav><!-- #primary-menu end -->
