@@ -44,6 +44,7 @@ $route['login'] = 'user/login/$1';
 $route['logout'] = 'user/logout/$1';
 $route['forgot'] = 'user/forgot/$1';
 $route['dashboard'] = 'dashboard';
+$route['claim_form'] = 'claim';
 $route['search-jobs'] = 'job_search/index/$1';
 $route['search-jobs/(:any)'] = 'job_search/index/$1';
 $route['search-resume'] = 'resume_search/index/$1';
