@@ -18,8 +18,17 @@ class User extends CI_Controller {
     }
 
     public function login() {
+
         $data['title'] = 'D9 Clubclaims';
 
         $this->load->view('signin_view', $data);
+    }
+
+    public function forgot() {
+
+        $data['title'] = 'Recover Your Password';
+        $data['msg'] = '';
+
+        $this->load->view('forgot_view', $data);
     }
 }
