@@ -45,6 +45,18 @@ class User extends CI_Controller {
             $this->load->view('signin_view', $data);
             return;
         }
+
+        if($userRow->sts=='pending'){
+            $data['msg'] = 'You have not yet verified your email address.';
+            $this->load->view('login_view', $data);
+            return;
+        }
+
+        if($userRow->sts=='blocked'){
+            $data['msg'] = 'Your account was suspended. Please contact site admin for further information.';
+            $this->load->view('login_view', $data);
+            return;
+        }
         $user_data = array(
             'user_id' => $userRow->ID,
             'user_email' => $userRow->email,
@@ -60,46 +72,6 @@ class User extends CI_Controller {
         }
 
         redirect(base_url('dashboard'), '');
-        /*
-        $is_creditor = TRUE;
-        $userRow = $this->creditors_model->authenticate_job_seeker($this->input->post('email'), $this->input->post('pass'));
-        $slug = '';
-
-        if($userRow->sts=='pending'){
-            $data['msg'] = 'You have not yet verified your email address.';
-            $this->load->view('login_view', $data);
-            return;
-        }
-
-        if($userRow->sts=='blocked'){
-            $data['msg'] = 'Your account was suspended. Please contact site admin for further information.';
-            $this->load->view('login_view', $data);
-            return;
-        }
-
-        $slug = @$userRow;
-        $user_data = array(
-            'user_id' => $userRow->ID,
-            'user_email' => $userRow->email,
-            'first_name' => $userRow->first_name,
-            'slug' => $slug,
-            'first_name' => $userRow->first_name,
-            'is_user_login' => TRUE,
-            'is_creditor' => $is_creditor
-        );
-        $this->session->set_userdata($user_data);
-
-        $this_model_name = creditors_model;
-
-        if($userRow->first_login_date==''){
-            $this->$this_model_name->update($userRow->ID, array('first_login_date' => date("Y-m-d H:i:s"), 'last_login_date' => date("Y-m-d H:i:s"), 'sts' => 'active'));
-        } else {
-            $this->$this_model_name->update($userRow->ID, array('last_login_date' => date("Y-m-d H:i:s")));
-        }
-
-        #$redirect = ($this->session->userdata('back_from_user_login')) ? $this->session->userdata('back_from_user_login') : $folder.'/dashboard';
-        #$this->session->set_userdata('back_from_user_login','');
-        redirect(base_url('dashboard'), '');*/
     }
 
     public function forgot() {
@@ -119,9 +91,14 @@ class User extends CI_Controller {
 
         $data['signup_link'] = $signup_link;
 
-        $row = $this->creditors_model->authenticate_job_seeker_email_address($this->input->post('email'));
+        $row = $this->creditors_model->authenticate_creditor_email_address($this->input->post('email'));
         $email = @$row->email;
         $password = @$row->password;
+        if(!$row){
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger">Provided email address does not exist.</div>');
+            redirect(base_url('forgot'));
+            exit;
+        }
 
         $row_email = $this->email_model->get_records_by_id(1);
 

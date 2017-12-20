@@ -48,7 +48,7 @@ class Creditors_model extends CI_Model {
         return $return;
     }
 
-    public function authenticate_job_seeker_email_address($user_name) {
+    public function authenticate_creditor_email_address($user_name) {
         $this->db->select('*');
         $this->db->from('pp_creditors');
         $this->db->where('email', $user_name);
