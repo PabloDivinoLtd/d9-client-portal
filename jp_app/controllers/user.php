@@ -101,7 +101,6 @@ class User extends CI_Controller {
         }
 
         $row_email = $this->email_model->get_records_by_id(1);
-
         $config = array();
         $config['wordwrap'] = TRUE;
         $config['mailtype'] = 'html';

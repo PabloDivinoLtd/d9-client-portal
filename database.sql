@@ -43,7 +43,7 @@ CREATE TABLE `pp_creditors` (
   `last_name` varchar(30) DEFAULT NULL,
   `dated` datetime NOT NULL,
   `country` varchar(50) DEFAULT NULL,
-  `sts` enum('active','blocked','pending') NOT NULL DEFAULT 'active',
+  `sts` int(1) NOT NULL,
   `first_login_date` datetime DEFAULT NULL,
   `last_login_date` datetime DEFAULT NULL,
   `slug` varchar(155) DEFAULT NULL,
