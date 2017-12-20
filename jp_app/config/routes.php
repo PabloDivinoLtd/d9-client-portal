@@ -40,13 +40,10 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 //Frontend
-$route['company/(:any)'] = 'company/index/$1';
-$route['jobs/(:any)'] = 'job_details/index/$1';
-$route['job_listing/(:any)'] = 'job_listing/index/$1';
-$route['(:any).html'] = 'content/index/$1';
 $route['login'] = 'user/login/$1';
 $route['logout'] = 'user/logout/$1';
 $route['forgot'] = 'user/forgot/$1';
+$route['dashboard'] = 'dashboard';
 $route['search-jobs'] = 'job_search/index/$1';
 $route['search-jobs/(:any)'] = 'job_search/index/$1';
 $route['search-resume'] = 'resume_search/index/$1';

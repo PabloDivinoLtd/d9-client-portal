@@ -17,6 +17,7 @@
             <nav id="primary-menu">
 
                 <ul class="one-page-menu">
+                    <li><a href="<?php echo base_url('dashboard');?>" class="loginBtn" title="Jobs openings">Dashboard</a></li>
                     <li><a href="<?php echo base_url('login');?>" class="loginBtn" title="Jobs openings">Login</a></li>
                 </ul>
 
