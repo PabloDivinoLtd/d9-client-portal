@@ -9,6 +9,8 @@
 <link href='<?php echo base_url('public/newstatic/css/responsive.css'); ?>' rel='stylesheet' type='text/css'>
 <link href="<?php echo base_url('public/newstatic/css/custom.css'); ?>" rel='stylesheet' type='text/css'>
 
+<link href="<?php echo base_url('public/newstatic/css/components/bs-filestyle.css'); ?>" rel='stylesheet' type='text/css'>
+
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="shortcut icon" href="<?php echo base_url('public/images/favicon.ico'); ?>">
