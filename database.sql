@@ -75,3 +75,23 @@ BEGIN;
 INSERT INTO `pp_email_content` VALUES ('1', 'Forgot Password', 'MNO Jobs', '<style type=\"text/css\">\n				.txt {\n						font-family: Arial, Helvetica, sans-serif;\n						font-size: 13px; color:#000000;\n					}\n				</style>\n<p class=\"txt\">Thank you  for contacting Member Support. Your account information is listed below: </p>\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"600\" class=\"txt\">\n  <tr>\n    <td width=\"17\" height=\"19\"><p>&nbsp;</p></td>\n    <td width=\"159\" height=\"25\" align=\"right\"><strong>Login Page:&nbsp;&nbsp;</strong></td>\n    <td width=\"424\" align=\"left\"><a href=\"{SITE_URL}/login\">{SITE_URL}/login</a></td>\n  </tr>\n  <tr>\n    <td height=\"19\">&nbsp;</td>\n    <td height=\"25\" align=\"right\"><strong>Your Username:&nbsp;&nbsp;</strong></td>\n    <td align=\"left\">{USERNAME}</td>\n  </tr>\n  <tr>\n    <td height=\"19\"><p>&nbsp;</p></td>\n    <td height=\"25\" align=\"right\"><strong>Your Password:&nbsp;&nbsp;</strong></td>\n    <td align=\"left\">{PASSWORD}</td>\n  </tr>\n</table>\n\n<p class=\"txt\">Thank you,</p>', 'eduxmax@gmail.com', 'Password Recovery'),
 ('2', 'Creditors Signup', 'Creditors Signup Successful', '<style type=\"text/css\">p {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color:#000000;}</style>\n\n  <p>{CREDITOR_NAME}:</p>\n  <p>Thank you for joining us. Please note your profile details for future record.</p>\n  <p>Username: {USERNAME}<br>\n    Password: {PASSWORD}</p>\n  \n  <p>Regards</p>', 'eduxmax@gmail.com', 'Jobs website');
 COMMIT;
+
+-- ----------------------------
+--  Table structure for `pp_countries`
+-- ----------------------------
+DROP TABLE IF EXISTS `pp_countries`;
+CREATE TABLE `pp_countries` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `country_name` varchar(150) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+--  Records of `pp_countries`
+-- ----------------------------
+BEGIN;
+INSERT INTO `pp_countries` VALUES ('', 'Afghanistan'), ('2', 'Åland Islands'), ('3', 'Albania', ), ('4', 'Algeria'), ('5', 'American Samoa'), ('6', 'Andorra'), ('7', 'Angola'), ('8', 'Anguilla')
+('9', 'Antigua and Barbuda'), ('10' 'Argentina'), ('11', 'Armenia'), ('12', 'Aruba'), ('13', 'Australia'), ('14', 'Austria'), ('15', 'Azerbaijan'), ('16', 'Bahamas'), ('17', 'Bahrain'), ('18', 'Bangladesh')
+('19', 'Barbados'), ('20', 'Belarus'), ('21', 'Belgium'), ('22', 'Belize'), ('23', 'Benin'), ('24', 'Bermuda'), ('25', 'Bhutan')
+('');
+COMMIT;

@@ -15,7 +15,7 @@ class Creditors_model extends CI_Model {
 
     }
 
-    public function update_job_seeker($id, $data){
+    public function update_creditor($id, $data){
         $this->db->where('ID', $id);
         $return=$this->db->update('pp_creditors', $data);
         return $return;
@@ -27,7 +27,7 @@ class Creditors_model extends CI_Model {
         return $return;
     }
 
-    public function delete_job_seeker($id){
+    public function delete_creditor($id){
         $this->db->where('ID', $id);
         $this->db->delete('pp_creditors');
     }
@@ -63,12 +63,26 @@ class Creditors_model extends CI_Model {
         return $return;
     }
 
-    public function authenticate_job_seeker_by_id_password($ID, $password) {
+    public function authenticate_creditor_by_id_password($ID, $password) {
         $this->db->select('*');
         $this->db->from('pp_creditors');
         $this->db->where('ID', $ID);
         $this->db->where('password', $password);
         $this->db->limit(1);
+        $Q = $this->db->get();
+        if ($Q->num_rows > 0) {
+            $return = $Q->row();
+        } else {
+            $return = 0;
+        }
+        $Q->free_result();
+        return $return;
+    }
+
+    public function get_creditors_by_id($id) {
+        $this->db->select('pp_creditors.*');
+        $this->db->from('pp_creditors');
+        $this->db->where('pp_creditors.ID', $id);
         $Q = $this->db->get();
         if ($Q->num_rows > 0) {
             $return = $Q->row();

@@ -18,7 +18,7 @@
 
                 <ul class="one-page-menu">
                     <?php if($this->session->userdata('is_user_login')!=TRUE): ?>
-                        <li><a href="<?php echo base_url();?>" class="loginBtn" title="Login">Home</a></li>
+                        <li><a href="<?php echo base_url();?>" class="loginBtn" title="Home page">Home</a></li>
                         <li><a href="<?php echo base_url('login');?>" class="loginBtn" title="Login">Login</a></li>
                     <?php else: ?>
                         <li><a href="<?php echo base_url('dashboard');?>" class="loginBtn" title="Dashboard">Dashboard</a></li>

@@ -48,13 +48,13 @@ class User extends CI_Controller {
 
         if($userRow->sts=='pending'){
             $data['msg'] = 'You have not yet verified your email address.';
-            $this->load->view('login_view', $data);
+            $this->load->view('signin_view', $data);
             return;
         }
 
         if($userRow->sts=='blocked'){
             $data['msg'] = 'Your account was suspended. Please contact site admin for further information.';
-            $this->load->view('login_view', $data);
+            $this->load->view('signin_view', $data);
             return;
         }
         $user_data = array(
