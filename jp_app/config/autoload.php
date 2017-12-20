@@ -93,6 +93,6 @@ $autoload['language'] = array();
 |
 */
 #$autoload['model'] = array('admin_model','employers_model','companies_model','countries_model','cities_model','industries_model','job_seekers_model', 'posted_jobs_model', 'applied_jobs_model', 'success_stories_model', 'cms_model', 'resume_model', 'salaries_model', 'qualification_model','institute_model','ads_model','stories_model','jobseeker_academic_model','jobseeker_experience_model','jobseeker_additional_info_model','old_db_model','new_db_model','email_drafts_model','prohibited_keywords_model','email_model','job_alert_model','skill_model','jobseeker_skills_model','newsletter_model','scam_model');
-$autoload['model'] = array('');
+$autoload['model'] = array('creditors_model', 'email_model', 'email_drafts_model');
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

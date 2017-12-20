@@ -17,27 +17,31 @@
         <section id="slider" style="background: url(<?php echo base_url('public/images/landing-1.jpg');?>) center; overflow: visible;" data-height-lg="500" data-height-md="500" data-height-sm="600" data-height-xs="600" data-height-xxs="600">
             <div class="container clearfix">
 
-                <div class="contact-widget" data-loader="button">
+                <div class="" >
 
                     <div class="contact-form-result"></div>
 
-                    <form action="" method="post" role="form" class="landing-wide-form landing-form-overlay dark nobottommargin clearfix">
+                        <?php echo form_open_multipart('default_controller',array('name' => 'creditor_form', 'class' => 'landing-wide-form landing-form-overlay dark nobottommargin clearfix', 'id' => 'creditor_form', 'onSubmit' => 'return validate_form(this);'));?>
                         <div class="heading-block nobottommargin nobottomborder">
                             <h2>Signup</h2>
                             <span>Register now to start your claims</span>
                         </div>
                         <div class="line" style="margin: 20px 0 30px;"></div>
-                        <div class="col_full">
-                            <input type="text" name="template-landing5-name" class="form-control required input-lg not-dark" value="" placeholder="Username*">
+                        <div class="col_full <?php echo (form_error('username'))?'has-error':'';?>">
+                            <input type="text" name="username" class="form-control required input-lg not-dark" value="<?php echo set_value('username'); ?>" placeholder="Username*">
+                            <?php echo form_error('username'); ?>
                         </div>
-                        <div class="col_full">
-                            <input type="email" name="template-landing5-email" class="form-control required input-lg not-dark" value="" placeholder="Your Email*">
+                        <div class="col_full <?php echo (form_error('email'))?'has-error':'';?>">
+                            <input type="email" name="email" class="form-control required input-lg not-dark" value="<?php echo set_value('email'); ?>" placeholder="Your Email*">
+                            <?php echo form_error('email'); ?>
                         </div>
-                        <div class="col_full">
-                            <input type="password" name="template-landing5-password" class="form-control required input-lg not-dark" value="" placeholder="Choose Password*">
+                        <div class="col_full <?php echo (form_error('pass'))?'has-error':'';?>">
+                            <input type="password" name="pass" class="form-control required input-lg not-dark" value="<?php echo set_value('pass'); ?>" placeholder="Choose Password*">
+                            <?php echo form_error('pass'); ?>
                         </div>
-                        <div class="col_full">
-                            <input type="password" name="template-landing5-repassword" class="form-control required input-lg not-dark" value="" placeholder="Confirm Password*">
+                        <div class="col_full<?php echo (form_error('confirm_pass'))?'has-error':'';?>">
+                            <input type="password" name="confirm_pass" class="form-control required input-lg not-dark" value="<?php echo set_value('confirm_pass'); ?>" placeholder="Confirm Password*">
+                            <?php echo form_error('confirm_pass'); ?>
                         </div>
                         <div class="col_full hidden">
                             <input type="text" id="template-landing5-botcheck" name="template-landing5-botcheck" value="" class="form-control" />
@@ -45,8 +49,8 @@
                         <div class="col_full nobottommargin">
                             <button class="btn btn-lg btn-danger btn-block nomargin" value="submit" type="submit" style="">START YOUR CLAIMS</button>
                         </div>
-                    </form>
 
+                    <?php echo form_close();?>
                 </div>
 
             </div>
