@@ -39,6 +39,28 @@ class User extends CI_Controller {
             return;
         }
 
+        $userRow = $this->creditors_model->authenticate_creditor($this->input->post('email'), $this->input->post('pass'));
+        if(!$userRow){
+            $data['msg'] = 'Wrong email or password provided';
+            $this->load->view('signin_view', $data);
+            return;
+        }
+        $user_data = array(
+            'user_id' => $userRow->ID,
+            'user_email' => $userRow->email,
+            'first_name' => $userRow->first_name,
+            'is_user_login' => TRUE,
+        );
+        $this->session->set_userdata($user_data);
+
+        if($userRow->first_login_date==''){
+            $this->creditors_model->update($userRow->ID, array('first_login_date' => date("Y-m-d H:i:s"), 'last_login_date' => date("Y-m-d H:i:s"), 'sts' => 'active'));
+        } else {
+            $this->creditors_model->update($userRow->ID, array('last_login_date' => date("Y-m-d H:i:s")));
+        }
+
+        redirect(base_url('dashboard'), '');
+        /*
         $is_creditor = TRUE;
         $userRow = $this->creditors_model->authenticate_job_seeker($this->input->post('email'), $this->input->post('pass'));
         $slug = '';
@@ -77,7 +99,7 @@ class User extends CI_Controller {
 
         #$redirect = ($this->session->userdata('back_from_user_login')) ? $this->session->userdata('back_from_user_login') : $folder.'/dashboard';
         #$this->session->set_userdata('back_from_user_login','');
-        redirect(base_url('dashboard'), '');
+        redirect(base_url('dashboard'), '');*/
     }
 
     public function forgot() {

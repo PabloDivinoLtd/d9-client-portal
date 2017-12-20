@@ -32,7 +32,7 @@ class Creditors_model extends CI_Model {
         $this->db->delete('pp_creditors');
     }
 
-    public function authenticate_job_seeker($user_name, $password) {
+    public function authenticate_creditor($user_name, $password) {
         $this->db->select('*');
         $this->db->from('pp_creditors');
         $this->db->where('email', $user_name);

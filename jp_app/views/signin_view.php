@@ -27,15 +27,19 @@
                             <div class="panel-body" style="padding: 40px;">
                                 <form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
                                     <h3>Login to your Account</h3>
-
+                                    <?php if($msg):?>
+                                        <div class="alert alert-danger"><?php echo $msg;?></div>
+                                    <?php endif;?>
+                                    <?php echo validation_errors(); ?>
+                                    <?php echo $this->session->flashdata('success_msg');?>
                                     <div class="col_full">
                                         <label for="login-form-username">Email address:</label>
-                                        <input type="email" id="email" name="email" value="" class="form-control not-dark" />
+                                        <input type="email" id="email" name="email" autocomplete="off" placeholder="Email" value="<?php echo set_value('email'); ?>" class="form-control not-dark" />
                                     </div>
 
                                     <div class="col_full">
                                         <label for="login-form-password">Password:</label>
-                                        <input type="password" id="pass" name="pass" value="" class="form-control not-dark" />
+                                        <input type="password" id="pass" name="pass" autocomplete="off" placeholder="Password" value="<?php echo set_value('pass'); ?>" class="form-control not-dark" />
                                     </div>
 
                                     <div class="col_full nobottommargin">
