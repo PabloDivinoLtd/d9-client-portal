@@ -84,8 +84,40 @@ class User extends CI_Controller {
 
         $data['title'] = 'Recover Your Password';
         $data['msg'] = '';
+        $signup_link = base_url();
 
-        $this->load->view('forgot_view', $data);
+        $this->form_validation->set_rules('email', 'email address', 'trim|required|valid_email');
+
+        $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
+
+        if ($this->form_validation->run() === FALSE) {
+            $this->load->view('forgot_view', $data);
+            return;
+        }
+
+        $data['signup_link'] = $signup_link;
+
+        $row = $this->creditors_model->authenticate_job_seeker_email_address($this->input->post('email'));
+        $email = @$row->email;
+        $password = @$row->password;
+
+        $row_email = $this->email_model->get_records_by_id(1);
+
+        $config = array();
+        $config['wordwrap'] = TRUE;
+        $config['mailtype'] = 'html';
+
+        $this->email->initialize($config);
+        $this->email->clear(TRUE);
+        $this->email->from($row_email->from_email, $row_email->from_name);
+        $this->email->to($email);
+
+        $this->email->subject(SITE_NAME.' | Password Recovery');
+        $mail_message = $this->email_drafts_model->get_forgot_password_draft($email, $password, $row_email->content);
+        $this->email->message($mail_message);
+        $this->email->send();
+        $this->session->set_flashdata('success_msg', '<div class="alert alert-success">Your account information has been sent to your email address.</div>');
+        redirect(base_url('login'));
     }
 
     public function logout() {

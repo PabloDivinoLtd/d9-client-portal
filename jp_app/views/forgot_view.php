@@ -25,16 +25,19 @@
 
                     <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;">
                         <div class="panel-body" style="padding: 40px;">
-                            <form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
+                            <form id="forgot_form" name="forgot_form" class="nobottommargin" action="" method="post">
                                 <h3>Account Recovery</h3>
-
+                                <?php if($msg):?>
+                                    <div class="alert alert-danger"><?php echo $msg;?></div>
+                                <?php endif;?>
+                                <?php echo validation_errors(); ?> <?php echo $this->session->flashdata('msg');?>
                                 <div class="col_full">
                                     <label for="login-form-username">Email:</label>
-                                    <input type="email" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" />
+                                    <input type="email" id="email" name="email" value="<?php echo set_value('email'); ?>" placeholder="Email" class="form-control not-dark" />
                                 </div>
 
                                 <div class="col_full nobottommargin">
-                                    <button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login">Recover Password</button>
+                                    <button type="submit" class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login">Recover Password</button>
                                 </div>
                             </form>
                         </div>
