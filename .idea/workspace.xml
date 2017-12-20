@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec914db2-1cfb-4282-ac33-6933f6e36ab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/controllers/home.php" afterPath="$PROJECT_DIR$/jp_app/controllers/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/controllers/user.php" afterPath="$PROJECT_DIR$/jp_app/controllers/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/models/creditors_model.php" afterPath="$PROJECT_DIR$/jp_app/models/creditors_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/models/email_drafts_model.php" afterPath="$PROJECT_DIR$/jp_app/models/email_drafts_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/views/signin_view.php" afterPath="$PROJECT_DIR$/jp_app/views/signin_view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,41 +38,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard_header.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jp_app/views/base/dashboard_header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="23" column="106" lean-forward="false" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jp_app/controllers/user.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+                <state relative-caret-position="1210">
+                  <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="email_drafts_model.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jp_app/models/email_drafts_model.php">
+          <file leaf-file-name="creditors_model.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/jp_app/models/creditors_model.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+                <state relative-caret-position="121">
+                  <caret line="77" column="26" lean-forward="true" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -81,6 +63,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1628">
                   <caret line="74" column="4" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="76" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signin_view.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/jp_app/views/signin_view.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="192">
+                  <caret line="37" column="83" lean-forward="false" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
                   <folding />
                 </state>
               </provider>
@@ -157,12 +149,34 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="217">
+                  <caret line="64" column="37" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="64" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
             <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/user.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="174" column="41" lean-forward="false" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
+                <state relative-caret-position="66">
+                  <caret line="96" column="9" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="100" selection-end-column="42" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="job_seekers_model.php" pinned="false" current-in-tab="false">
+            <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/models/job_seekers_model.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="121">
+                  <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+                  <folding>
+                    <marker date="1480493471000" expanded="true" signature="5636:5749" ph="SELECT GROUP... pp_seeker_skills" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -231,18 +245,18 @@
         <option value="$PROJECT_DIR$/jp_app/views/base/dashboard_header.php" />
         <option value="$PROJECT_DIR$/jp_app/views/payfees_view.php" />
         <option value="$PROJECT_DIR$/jp_app/config/routes.php" />
-        <option value="$PROJECT_DIR$/jp_app/views/signin_view.php" />
         <option value="$PROJECT_DIR$/jp_app/views/forgot_view.php" />
         <option value="$PROJECT_DIR$/../jobManager/jobportal/jp_app/controllers/jobseeker_signup.php" />
-        <option value="$PROJECT_DIR$/jp_app/models/creditors_model.php" />
         <option value="$PROJECT_DIR$/jp_app/models/email_model.php" />
-        <option value="$PROJECT_DIR$/jp_app/models/email_drafts_model.php" />
         <option value="$PROJECT_DIR$/jp_app/views/home_view.php" />
         <option value="$PROJECT_DIR$/database.sql" />
         <option value="$PROJECT_DIR$/jp_app/config/autoload.php" />
-        <option value="$PROJECT_DIR$/jp_app/controllers/user.php" />
-        <option value="D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/user.php" />
         <option value="$PROJECT_DIR$/jp_app/controllers/home.php" />
+        <option value="$PROJECT_DIR$/jp_app/models/email_drafts_model.php" />
+        <option value="$PROJECT_DIR$/jp_app/views/signin_view.php" />
+        <option value="$PROJECT_DIR$/jp_app/models/creditors_model.php" />
+        <option value="D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/user.php" />
+        <option value="$PROJECT_DIR$/jp_app/controllers/user.php" />
       </list>
     </option>
   </component>
@@ -305,14 +319,13 @@
               <item name="d9-client-portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="d9-client-portal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="jp_app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="d9-client-portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="d9-client-portal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="jp_app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="base" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -349,12 +362,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513711130831</updated>
       <workItem from="1513711132218" duration="467000" />
-      <workItem from="1513711652268" duration="28267000" />
+      <workItem from="1513711652268" duration="30328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28734000" />
+    <option name="totallyTimeSpent" value="30795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -390,14 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jp_app/views/base/meta_tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="44" lean-forward="false" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/views/base/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -568,14 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/signin_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="81" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../jobManager/jobportal/jp_app/views/base/page-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -684,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/models/email_drafts_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/views/base/before_body_close.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -771,14 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/base/home_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="142" lean-forward="true" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../jobManager/jobportal/jp_app/views/jobseeker_signup_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -811,38 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/models/creditors_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/controllers/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/base/dashboard_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="106" lean-forward="false" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1628">
@@ -859,18 +808,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/base/dashboard_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="106" lean-forward="false" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/models/email_drafts_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/base/home_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="142" lean-forward="true" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/signin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="37" column="83" lean-forward="false" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/models/creditors_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="77" column="26" lean-forward="true" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/models/job_seekers_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+          <folding>
+            <marker date="1480493471000" expanded="true" signature="5636:5749" ph="SELECT GROUP... pp_seeker_skills" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="174" column="41" lean-forward="false" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
+        <state relative-caret-position="66">
+          <caret line="96" column="9" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="100" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="217">
+          <caret line="64" column="37" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="64" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/controllers/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1210">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
           <folding />
         </state>
       </provider>

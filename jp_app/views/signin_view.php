@@ -29,13 +29,13 @@
                                     <h3>Login to your Account</h3>
 
                                     <div class="col_full">
-                                        <label for="login-form-username">Username:</label>
-                                        <input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" />
+                                        <label for="login-form-username">Email address:</label>
+                                        <input type="email" id="email" name="email" value="" class="form-control not-dark" />
                                     </div>
 
                                     <div class="col_full">
                                         <label for="login-form-password">Password:</label>
-                                        <input type="password" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" />
+                                        <input type="password" id="pass" name="pass" value="" class="form-control not-dark" />
                                     </div>
 
                                     <div class="col_full nobottommargin">
