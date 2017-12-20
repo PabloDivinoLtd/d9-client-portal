@@ -31,4 +31,18 @@ class User extends CI_Controller {
 
         $this->load->view('forgot_view', $data);
     }
+
+    public function logout() {
+        $user_data = array(
+            'user_id' => '',
+            'useremail' => '',
+            'is_user_login' => FALSE,
+            'slug' => '',
+            'is_job_seeker' => FALSE,
+            'is_employer' => FALSE
+        );
+        $this->session->set_userdata($user_data);
+        $this->session->unset_userdata($user_data);
+        redirect(base_url(), 'refresh');
+    }
 }

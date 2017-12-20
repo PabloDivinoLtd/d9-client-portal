@@ -12,11 +12,6 @@ class Home extends CI_Controller {
 
     public function index(){
 
-        if($this->session->userdata('is_creditor')==TRUE){
-            redirect(base_url('dashboard'),'');
-            exit;
-        }
-
         $data['title'] = 'D9 Clubclaims';
         $data['msg']='';
 
