@@ -28,7 +28,6 @@ class Home extends CI_Controller {
             return;
 
         }
-
         $current_date = date("Y-m-d H:i:s");
         $creditor_array = array(
             'username' => $this->input->post('username'),
