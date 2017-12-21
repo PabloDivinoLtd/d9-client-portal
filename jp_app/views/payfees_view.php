@@ -29,19 +29,20 @@
                     <div >
 
                     </div>
-
-                    <form id="register-form" name="register-form" class="nobottommargin" action="#" method="POST">
-                        <div class="col_full">
+                    <?php echo form_open_multipart('default_controller',array('name' => 'payfees_form', 'class' => 'nobottommargin', 'id' => 'payfees_form', 'onSubmit' => 'return validate_form(this);'));?>
+                        <div class="col_full <?php echo (form_error('slip_file') || $msg)?'has-error':'';?>">
                             <label></label><br>
-                            <input id="input-1" type="file" class="file">
+                            <input type="file" name="slip_file" id="slip_file" value="<?php echo set_value('slip_file'); ?>" class="file">
+                            <?php
+                            echo form_error('slip_file');
+                            echo ($msg!='')?'<div class="alert alert-error"> <a class="close" data-dismiss="alert">×</a>'.$msg.'</div>':'';
+                            ?>
                         </div>
 
                         <div class="col_full nobottommargin">
                             <button class="button button-3d button-black nomargin" id="submit" name="submit" value="register">Upload your payment receipt</button>
                         </div>
-
-                    </form>
-
+                    <?php echo form_close();?>
                 </div>
             </div>
         </div>
