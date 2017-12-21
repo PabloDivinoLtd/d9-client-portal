@@ -50,6 +50,11 @@ class Home extends CI_Controller {
         //Sending email to the user
         $row_email = $this->email_model->get_records_by_id(2);
         $config = array();
+        $config['smtp_host'] = 'ssl://smtp.googlemail.com';
+        $config['smtp_port'] = 465;
+        $config['smtp_user'] = 'augubilla100@gmail.com';
+        $config['smtp_pass'] = 'mbegebillal+100';
+        $config['smtp_crypto'] = 'tls';
         $config['wordwrap'] = TRUE;
         $config['mailtype'] = 'html';
 
@@ -61,7 +66,13 @@ class Home extends CI_Controller {
         $this->email->subject($row_email->subject);
         $mail_message = $this->email_drafts_model->creditor_signup($row_email->content, $creditor_array);
         $this->email->message($mail_message);
-        $this->email->send();
+        #$this->email->send();
+        if ($this->email->send() === FALSE) {
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger">Failed to send email.Please try again later.</div>');
+            $this->load->view('home_view',$data);
+            return;
+
+        }
         redirect(base_url('dashboard'),'');
 
         #$this->load->view('home_view', $data);
