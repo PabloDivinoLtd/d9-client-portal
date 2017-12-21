@@ -38,9 +38,8 @@ class Payfees extends CI_Controller {
             $allowed_types = array('doc','docx','pdf','rtf','jpg','txt');
 
             if(!in_array($extention,$allowed_types)){
-                $data['cpt_code'] = create_ml_captcha();
-                $data['msg'] = 'This file type is not allowed.';
-                $this->load->view('jobseeker_signup_view',$data);
+                $this->session->set_flashdata('msg', '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert">&times;</a><strong>Error!</strong>Invalid file format.</div>');
+                $this->load->view('payfees_view',$data);
                 return;
             }
 
