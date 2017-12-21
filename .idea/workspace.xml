@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec914db2-1cfb-4282-ac33-6933f6e36ab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/controllers/claim.php" afterPath="$PROJECT_DIR$/jp_app/controllers/claim.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/controllers/home.php" afterPath="$PROJECT_DIR$/jp_app/controllers/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jp_app/views/claim_view.php" afterPath="$PROJECT_DIR$/jp_app/views/claim_view.php" />
-    </list>
+    <list default="true" id="ec914db2-1cfb-4282-ac33-6933f6e36ab8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,26 +23,22 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="payfees.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/jp_app/controllers/payfees.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="96">
+                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="payfees_view.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jp_app/views/payfees_view.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
+                <state relative-caret-position="352">
                   <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-                  <folding>
-                    <marker date="1513849320111" expanded="true" signature="2121:2179" ph="..." />
-                    <marker date="1513849320111" expanded="true" signature="2192:2227" ph="..." />
-                    <marker date="1513849320111" expanded="true" signature="2296:2353" ph="..." />
-                    <marker date="1513849320111" expanded="true" signature="2409:2455" ph="..." />
-                    <marker date="1513849320111" expanded="true" signature="2489:4476" ph="..." />
-                    <marker date="1513849320111" expanded="true" signature="2530:4464" ph="{...}" />
-                    <marker date="1513849320111" expanded="true" signature="2620:2763" ph="{&quot;mainClass&quot;: &quot;input-group-lg&quot;...}" />
-                    <marker date="1513849320111" expanded="true" signature="2799:3329" ph="{&quot;mainClass&quot;: &quot;input-group-md&quot;...}" />
-                    <marker date="1513849320111" expanded="true" signature="3365:3657" ph="{&quot;previewFileType&quot;: &quot;text&quot;...}" />
-                    <marker date="1513849320111" expanded="true" signature="3694:4141" ph="{...}" />
-                    <marker date="1513849320111" expanded="true" signature="3756:4131" ph="{...}" />
-                    <marker date="1513849320111" expanded="true" signature="4178:4268" ph="{...}" />
-                    <marker date="1513849320111" expanded="true" signature="4305:4456" ph="{&quot;elErrorContainer&quot;: &quot;##errorBlock&quot;...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -57,16 +48,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="22">
                   <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="claim_view.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jp_app/views/claim_view.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="792">
-                  <caret line="52" column="91" lean-forward="false" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
                   <folding />
                 </state>
               </provider>
@@ -96,11 +77,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="claim.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="claim.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jp_app/controllers/claim.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                <state relative-caret-position="88">
+                  <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -660,7 +641,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73644000" />
+    <option name="totallyTimeSpent" value="73819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -727,13 +708,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/views/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="40" column="71" lean-forward="false" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/jobseeker/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -982,14 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/controllers/payfees.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1012,22 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1166">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/dashboard_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/models/creditors_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1111,10 +1061,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/models/creditors_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="68" column="44" lean-forward="false" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/payfees_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/dashboard_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/controllers/claim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        <state relative-caret-position="88">
+          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/controllers/payfees.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
