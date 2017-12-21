@@ -99,8 +99,8 @@
           <file leaf-file-name="claim.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jp_app/controllers/claim.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+                <state relative-caret-position="66">
+                  <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -438,7 +438,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="change_password.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="change_password.php" pinned="false" current-in-tab="false">
             <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/jobseeker/change_password.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="132">
@@ -493,7 +493,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="352">
@@ -660,7 +660,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73077000" />
+    <option name="totallyTimeSpent" value="73644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1000,14 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/views/base/home_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1021,18 +1013,6 @@
         <state relative-caret-position="-1166">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/home_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="26" column="74" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="264" />
-          <folding>
-            <marker date="1513849320107" expanded="false" signature="1427:1447" ph="..." />
-            <marker date="1513849320107" expanded="false" signature="3782:3800" ph="..." />
-            <marker date="1513849320107" expanded="false" signature="4064:4090" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jp_app/views/claim_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="52" column="91" lean-forward="false" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/php/jobportal-31/codecanyon-15330095-job-portal/jobportal/jp_app/controllers/jobseeker_signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1111,10 +1083,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/home_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="26" column="74" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="264" />
+          <folding>
+            <marker date="1513849320107" expanded="false" signature="1427:1447" ph="..." />
+            <marker date="1513849320107" expanded="false" signature="3782:3800" ph="..." />
+            <marker date="1513849320107" expanded="false" signature="4064:4090" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/controllers/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jp_app/views/claim_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="52" column="91" lean-forward="false" selection-start-line="52" selection-start-column="91" selection-end-line="52" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jp_app/controllers/claim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+        <state relative-caret-position="66">
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding />
         </state>
       </provider>
