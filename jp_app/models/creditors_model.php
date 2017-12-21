@@ -48,10 +48,25 @@ class Creditors_model extends CI_Model {
         return $return;
     }
 
-    public function authenticate_creditor_email_address($user_name) {
+    public function authenticate_creditor_email_address($email) {
         $this->db->select('*');
         $this->db->from('pp_creditors');
-        $this->db->where('email', $user_name);
+        $this->db->where('email', $email);
+        $this->db->limit(1);
+        $Q = $this->db->get();
+        if ($Q->num_rows > 0) {
+            $return = $Q->row();
+        } else {
+            $return = 0;
+        }
+        $Q->free_result();
+        return $return;
+    }
+
+    public function authenticate_creditor_username($user_name) {
+        $this->db->select('*');
+        $this->db->from('pp_creditors');
+        $this->db->where('username', $user_name);
         $this->db->limit(1);
         $Q = $this->db->get();
         if ($Q->num_rows > 0) {
