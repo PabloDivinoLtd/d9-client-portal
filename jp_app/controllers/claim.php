@@ -20,17 +20,16 @@ class Claim extends CI_Controller {
 
         $data['title'] = 'D9 Clubclaims';
         $data['msg'] = '';
-        $this->load->view('claim_view', $data);
-        /*
+
         $this->form_validation->set_rules('username', 'Username', 'trim|required|strip_all_tags');
         $this->form_validation->set_rules('full_name', 'Full Name', 'trim|required|strip_all_tags');
         $this->form_validation->set_rules('phone', 'Phone', 'trim|required|strip_all_tags');
         $this->form_validation->set_rules('package_name', 'Package Name', 'trim|required|strip_all_tags');
-        $this->form_validation->set_rules('country', 'country', 'trim|required|strip_all_tags');
+        $this->form_validation->set_rules('country', 'Country', 'trim|required|strip_all_tags');
 
         $this->form_validation->set_error_delimiters('<div class="errowbox"><div class="erormsg">', '</div></div>');
         if ($this->form_validation->run() === FALSE) {
-            $data['msg'] = $this->session->flashdata('msg');
+            #$data['msg'] = $this->session->flashdata('msg');
             $this->load->view('claim_view', $data);
             return;
         }
@@ -73,10 +72,12 @@ class Claim extends CI_Controller {
 
         if($this->email->send()) {
             $this->session->set_flashdata('msg', '<div class="alert alert-danger">Your claims were sent successfully.</div>');
-            $this->load->view('claim_view', $data);
+            redirect(base_url('claim_form'));
+            return;
         } else {
             $this->session->set_flashdata('msg', '<div class="alert alert-danger">Failed to send your claims, try again later.</div>');
-            $this->load->view('claim_view', $data);
-        }*/
+            redirect(base_url('claim_form'));
+            return;
+        }
     }
 }
