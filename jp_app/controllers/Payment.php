@@ -66,7 +66,8 @@ class Payment extends CI_Controller {
 
                 $this->email->subject('Creditor payment');
                 $mail_message = 'The attached file have the creditor receipt';
-                $this->email->attach($receipt);
+                #$path = set_realpath('../public/uploads/candidate/');
+                $this->email->attach($receipt['full_path']);
                 $this->email->message($mail_message);
 
                 if($this->email->send()) {

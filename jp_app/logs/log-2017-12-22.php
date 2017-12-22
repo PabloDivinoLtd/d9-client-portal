@@ -310,3 +310,9 @@ ERROR - 2017-12-22 08:29:44 --> Severity: Notice  --> Array to string conversion
 ERROR - 2017-12-22 08:29:44 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;d9clubclaims.com&quot; port 587, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1553
 ERROR - 2017-12-22 08:43:27 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
 ERROR - 2017-12-22 08:43:27 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 09:28:09 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 09:28:09 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 09:29:33 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 09:29:47 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;d9clubclaims.com&quot; port 587, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1553
+ERROR - 2017-12-22 09:31:50 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 09:32:00 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;d9clubclaims.com&quot; port 587, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1553

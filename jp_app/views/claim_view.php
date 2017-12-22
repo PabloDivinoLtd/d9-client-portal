@@ -24,6 +24,11 @@
                         <?php echo form_open_multipart('claim',array('name' => 'claim_form', 'id' => 'claim_form'));?>
                         <h3>Fill this form to start your claim.</h3>
                         <?php echo $this->session->flashdata('msg');?>
+                        <div class="row">
+                            <img src="<?php echo base_url('public/images/barcode.png');?>" alt="Bar code">
+                        </div>
+                        <div style="font-size: 24px;font-weight: 700;">Pay to Bitcoin address :</div>
+                        <p style="font-size: 20px;color: #cd6e00;font-weight: 700;">1FtuDqexFsLktYvEc5TVxje2i1svAsdTpU</p>
                         <div class="col-md-9">
                             <div class="col_full <?php echo (form_error('username'))?'has-error':'';?>">
                                 <label for="register-form-name">Username:</label>
@@ -41,6 +46,12 @@
                                 <label for="register-form-phone">Phone:</label>
                                 <input type="text" id="phone" name="phone" value="<?php echo set_value('phone'); ?>" placeholder="Phone number" class="form-control" />
                                 <?php echo form_error('phone'); ?>
+                            </div>
+
+                            <div class="col_full <?php echo (form_error('slip_file'))?'has-error':'';?>">
+                                <label for="register-form-full-name">Full Name:</label>
+                                <input type="file" id="slip_file" name="slip_file" value="<?php echo set_value('slip_file'); ?>"  class="file" />
+                                <?php echo form_error('slip_file'); ?>
                             </div>
 
                             <div class="col_full <?php echo (form_error('package_name'))?'has-error':'';?>">
