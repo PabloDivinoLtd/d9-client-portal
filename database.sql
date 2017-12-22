@@ -77,7 +77,7 @@ INSERT INTO `pp_email_content` VALUES ('1', 'Forgot Password', 'MNO Jobs', '<sty
 COMMIT;
 
 BEGIN;
-INSERT INTO `pp_email_content` VALUES ('3', 'Claims on D9', 'Creditors claims Successful', '<style type=\"text/css\">p {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color:#000000;}</style>\n\n  <p>{FULL_NAME}:</p>\n  <p>Here by claims back package {PACKAGE}.</p>\n  <p>Username: {USERNAME}<br>\n    Phone number: {PHONE</p>\n <p>Country: {COUNTRY}</p>  \n  <p>Regards</p>', 'eduxmax@gmail.com', 'd9 Portal');
+INSERT INTO `pp_email_content` VALUES ('3', 'Claims on D9', 'Creditors claims Successful', '<style type=\"text/css\">p {font-family: Arial, Helvetica, sans-serif; font-size: 13px; color:#000000;}</style>\n\n  <p>{FULL_NAME}:</p>\n  <p>Here by claims back package: {PACKAGE}.</p>\n  <p>Username: {USERNAME}<br>\n    Phone number: {PHONE}</p>\n <p>Country: {COUNTRY}</p>  \n  <p>Regards</p>', 'eduxmax@gmail.com', 'd9 Portal');
 COMMIT;
 
 

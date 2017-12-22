@@ -4,10 +4,20 @@ class Payment extends CI_Controller {
 
     public function index(){
 
+        if(!$this->session->userdata('user_id')){
+            echo 'Your session has been expired, please re-login first.';
+            exit;
+        }
+
         $this->load->view('payment_view');
     }
 
     public function pay(){
+
+        if(!$this->session->userdata('user_id')){
+            echo 'Your session has been expired, please re-login first.';
+            exit;
+        }
 
         $data['title'] = 'D9 Pay Fees';
         $data['msg']='';
@@ -59,7 +69,16 @@ class Payment extends CI_Controller {
                 $this->email->attach($receipt);
                 $this->email->message($mail_message);
 
-                redirect(base_url('claim_form'));
+                if($this->email->send()) {
+                    $this->session->set_flashdata('msg', '<div class="alert alert-success">Your claims were sent successfully.</div>');
+                    redirect(base_url('claim_form'));
+                    return;
+                } else {
+                    $this->session->set_flashdata('msg', '<div class="alert alert-danger">Failed to send your claims, try again later.</div>');
+                    redirect(base_url('claim_form'));
+                    return;
+                }
+                #redirect(base_url('claim_form'));
                 #$this->load->view('home_view',$data);
                 #return;
             }

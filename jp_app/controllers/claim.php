@@ -52,18 +52,17 @@ class Claim extends CI_Controller {
         $mail_message = $this->email_drafts_model->creditor_claims_draft($row_email->content, $profile_array);
 
         //config email settings
-        $config['protocol'] = 'smtp';
-        $config['smtp_host'] = 'd9clubclaims.com';
-        $config['smtp_port'] = '587';
-        $config['smtp_user'] = 'info@d9clubclaims.com';
-        $config['smtp_pass'] = 'f173oo431002';  //sender's password
+        $config = array();
+        $config['smtp_host'] = 'ssl://smtp.googlemail.com';
+        $config['smtp_port'] = 465;
+        $config['smtp_user'] = 'augubilla100@gmail.com';
+        $config['smtp_pass'] = 'mbegebillal+100';
+        $config['smtp_crypto'] = 'tls';
+        $config['wordwrap'] = TRUE;
         $config['mailtype'] = 'html';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = 'TRUE';
-        $config['newline'] = "\r\n";
 
-        $this->load->library('email', $config);
         $this->email->initialize($config);
+        $this->email->clear(TRUE);
         //send email
         $this->email->from($email);
         $this->email->to('augubilla100@gmail.com');
@@ -71,7 +70,7 @@ class Claim extends CI_Controller {
         $this->email->message($mail_message);
 
         if($this->email->send()) {
-            $this->session->set_flashdata('msg', '<div class="alert alert-danger">Your claims were sent successfully.</div>');
+            $this->session->set_flashdata('msg', '<div class="alert alert-success">Your claims were sent successfully.</div>');
             redirect(base_url('claim_form'));
             return;
         } else {

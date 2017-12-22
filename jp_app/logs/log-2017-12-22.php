@@ -292,3 +292,21 @@ ERROR - 2017-12-22 01:55:20 --> 404 Page Not Found --> claim_view
 ERROR - 2017-12-22 01:56:18 --> 404 Page Not Found --> claim_view
 ERROR - 2017-12-22 01:56:20 --> 404 Page Not Found --> claim_view
 ERROR - 2017-12-22 01:56:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\d9-client-portal\jp_app\controllers\claim.php 38
+ERROR - 2017-12-22 08:23:59 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:23:59 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 08:24:05 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:24:05 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 08:25:40 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:25:40 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 08:26:24 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:26:24 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 08:26:40 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:26:40 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 08:29:41 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 08:29:44 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 08:29:44 --> Severity: Warning  --> basename() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1142
+ERROR - 2017-12-22 08:29:44 --> Severity: Warning  --> file_exists() expects parameter 1 to be a valid path, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1145
+ERROR - 2017-12-22 08:29:44 --> Severity: Notice  --> Array to string conversion C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1981
+ERROR - 2017-12-22 08:29:44 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;d9clubclaims.com&quot; port 587, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1553
+ERROR - 2017-12-22 08:43:27 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 08:43:27 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
