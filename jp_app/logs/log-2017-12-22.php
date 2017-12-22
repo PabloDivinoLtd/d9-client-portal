@@ -282,3 +282,13 @@ ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects paramete
 ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
 ERROR - 2017-12-22 01:49:23 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
 ERROR - 2017-12-22 01:49:23 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:54:46 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:54:46 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:54:54 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:54:56 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:54:56 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:55:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\d9-client-portal\jp_app\controllers\claim.php 38
+ERROR - 2017-12-22 01:55:20 --> 404 Page Not Found --> claim_view
+ERROR - 2017-12-22 01:56:18 --> 404 Page Not Found --> claim_view
+ERROR - 2017-12-22 01:56:20 --> 404 Page Not Found --> claim_view
+ERROR - 2017-12-22 01:56:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\d9-client-portal\jp_app\controllers\claim.php 38

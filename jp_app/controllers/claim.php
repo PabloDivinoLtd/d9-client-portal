@@ -38,7 +38,7 @@ class Claim extends CI_Controller {
         $email = @$row->email;
         if(!$row){
             $this->session->set_flashdata('msg', '<div class="alert alert-danger">Provided username does not exist.</div>');
-            redirect(base_url('claim_view'));
+            redirect(base_url('claim_form'));
             exit;
         }
         $profile_array = array(
