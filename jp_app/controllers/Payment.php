@@ -4,7 +4,7 @@ class Payment extends CI_Controller {
 
     public function index(){
 
-        $this->load->view('payfees_view');
+        $this->load->view('payment_view');
     }
 
     public function pay(){
@@ -12,16 +12,24 @@ class Payment extends CI_Controller {
         $data['title'] = 'D9 Pay Fees';
         $data['msg']='';
 
-        $this->form_validation->set_rules('full_name', 'Full Name', 'trim|required|strip_all_tags');
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|strip_all_tags');
         if (empty($_FILES['slip_file']['name'])){
             $this->form_validation->set_rules('slip_file', 'Receipt', 'required');
         }
 
         $this->form_validation->set_error_delimiters('<div class="errowbox"><div class="erormsg">', '</div></div>');
         if ($this->form_validation->run() === FALSE) {
-            $this->load->view('payfees_view',$data);
+            $this->load->view('payment_view',$data);
             return;
-        } else {
+        }
+
+        $row = $this->creditors_model->authenticate_creditor_username($this->input->post('username'));
+        if(!$row){
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger">Provided username does not exist.</div>');
+            redirect(base_url('payment'));
+            exit;
+        }
+        else {
             $config['upload_path'] = realpath(APPPATH . '../public/uploads/candidate/');
             $config['allowed_types'] = 'txt|pdf|jpg|jpeg';
             $config['file_name'] = $_FILES['slip_file']['name'];

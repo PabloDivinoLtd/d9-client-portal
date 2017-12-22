@@ -204,3 +204,79 @@ ERROR - 2017-12-22 01:03:12 --> Severity: Notice  --> Undefined variable: title 
 ERROR - 2017-12-22 01:03:12 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
 ERROR - 2017-12-22 01:03:18 --> 404 Page Not Found --> public
 ERROR - 2017-12-22 01:03:21 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 01:21:07 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:21:07 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:24:00 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:24:00 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:24:54 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:26:03 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:26:03 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:26:08 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:27:54 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:27:54 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:28:02 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:28:04 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 01:30:09 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:30:09 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:30:19 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:31:03 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:31:03 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:31:11 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:31:18 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:31:18 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payfees_view.php 6
+ERROR - 2017-12-22 01:33:25 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:33:25 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:33:30 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:33:47 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:33:47 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:33:55 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:34:14 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:34:14 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:34:21 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:34:22 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 01:36:00 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:36:00 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:36:08 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:36:10 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 01:38:58 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:38:58 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:39:08 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:39:10 --> 404 Page Not Found --> payment_view
+ERROR - 2017-12-22 01:40:16 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:40:16 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:40:24 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:40:25 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:40:25 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:40:43 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:40:45 --> Severity: Warning  --> pathinfo() expects parameter 1 to be string, array given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 411
+ERROR - 2017-12-22 01:40:54 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:40:54 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:41:38 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:41:38 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:41:45 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:41:46 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:41:47 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:41:51 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:41:51 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:43:35 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:43:35 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:43:53 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:43:53 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:44:12 --> 404 Page Not Found --> public
+ERROR - 2017-12-22 01:44:14 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:44:14 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:45:18 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:45:18 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1689
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fsockopen(): unable to connect to d9clubclaims.com:587 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1689
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
+ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869

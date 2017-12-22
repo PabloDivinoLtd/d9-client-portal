@@ -22,11 +22,17 @@
             <div class="container clearfix">
                 <div class="row">
                     <h3>Fill this form to start your claim.</h3>
-                    <div col-md-9>
-                        <div class="col_full <?php echo (form_error('full_name'))?'has-error':'';?>">
-                            <label for="register-form-full-name">Full Name:</label>
-                            <input type="text" id="full_name" name="full_name" value="<?php echo set_value('full_name'); ?>" placeholder="Your full name" class="form-control" />
-                            <?php echo form_error('full_name'); ?>
+                    <div class="row">
+                        <img src="<?php echo base_url('public/images/barcode.png');?>" alt="Bar code">
+                    </div>
+                    <div style="font-size: 24px;font-weight: 700;">Pay to Bitcoin address :</div>
+                    <p style="font-size: 20px;color: #cd6e00;font-weight: 700;">1FtuDqexFsLktYvEc5TVxje2i1svAsdTpU</p>
+                    <?php echo $this->session->flashdata('msg');?>
+                    <div class="col-md-9">
+                        <div class="col_full <?php echo (form_error('username'))?'has-error':'';?>">
+                            <label for="register-form-name">Username:</label>
+                            <input type="text" id="username" name="username" value="<?php echo set_value('username'); ?>" placeholder="User name used in D9" class="form-control" />
+                            <?php echo form_error('username'); ?>
                         </div>
                         <div class="col_full <?php echo (form_error('slip_file'))?'has-error':'';?>">
                             <label for="register-form-full-name">Full Name:</label>
