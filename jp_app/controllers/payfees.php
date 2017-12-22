@@ -7,20 +7,27 @@
  */
 class Payfees extends CI_Controller {
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     public function index(){
         if(!$this->session->userdata('user_id')){
-            $this->session->set_flashdata('msg', '<div class="alert alert-danger">Your session have expired.Login again.</div>');
+            echo 'Your session has been expired, please re-login first.';
+            exit;
+        }
+
+        redirect(base_url().'payfees/receipt', 'refresh');
+    }
+
+
+    public function receipt(){
+
+        if(!$this->session->userdata('user_id')){
+            echo 'Your session has been expired, please re-login first.';
             exit;
         }
 
         $data['title'] = 'D9 Pay Fees';
         $data['msg']='';
 
+        $this->form_validation->set_rules('full_name', 'Full Name', 'trim|required|strip_all_tags');
         if (empty($_FILES['slip_file']['name'])){
             $this->form_validation->set_rules('slip_file', 'Receipt', 'required');
         }
@@ -29,35 +36,26 @@ class Payfees extends CI_Controller {
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('payfees_view',$data);
             return;
-        } else
-            if (!empty($_FILES['slip_file']['name'])){
+        }
+        if(!empty($_FILES['slip_file']['name'])){
+            $config['upload_path'] = realpath(APPPATH . '../public/uploads/candidate/');
+            $config['allowed_types'] = 'txt|pdf|jpg|jpeg';
+            $config['file_name'] = $_FILES['slip_file']['name'];
 
-                $extention = get_file_extension($_FILES['cv_file']['name']);
-                $allowed_types = array('doc','docx','pdf','rtf','jpg','txt');
+            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
 
-                if(!in_array($extention,$allowed_types)){
-                    $this->session->set_flashdata('msg', '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert">&times;</a><strong>Error!</strong>Invalid file format.</div>');
-                    $this->load->view('payfees_view',$data);
-                    return;
-                }
-
-                #$receipt = $this->input->$_FILES['slip_file'];
-                $real_path = realpath(APPPATH . '../public/uploads/');
-                $config['upload_path'] = $real_path;
-                $config['allowed_types'] = 'doc|docx|pdf|rtf|jpg|txt';
-                $config['overwrite'] = true;
-                $config['max_size'] = 6000;
-                #$config['file_name'] = replace_string(' ','-',strtolower('d9').'-'.$seeker_id;
-                $this->upload->initialize($config);
-                if (!$this->upload->do_upload('slip_file')){
-                    $data['msg'] = $this->upload->display_errors();
-                    $this->load->view('payfees_view',$data);
-                    return;
-                }
-
-                $receipt = array('upload_data' => $this->upload->data());
-
+            if ($this->upload->do_upload('slip_file')){
+                $receipt = $this->upload->data();
+                $data['msg'] = 'Successfull upload.';
+                $this->load->view('payfees_view',$data);
+                return;
             }
+        } else {
+            $data['msg'] = 'File is empty.';
+            $this->load->view('payfees_view',$data);
+            return;
+        }
 
         $config = array();
         $config['smtp_host'] = 'ssl://smtp.googlemail.com';
@@ -78,6 +76,6 @@ class Payfees extends CI_Controller {
         $this->email->attach($receipt);
         $this->email->message($mail_message);
 
-        redirect(base_url('pay_fees'));
+        redirect(base_url('claim_form'));
     }
 }
