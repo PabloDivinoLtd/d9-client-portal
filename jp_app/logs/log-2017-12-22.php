@@ -280,3 +280,5 @@ ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter
 ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
 ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fwrite() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1846
 ERROR - 2017-12-22 01:47:04 --> Severity: Warning  --> fgets() expects parameter 1 to be resource, boolean given C:\xampp\htdocs\d9-client-portal\jp_sys\libraries\Email.php 1869
+ERROR - 2017-12-22 01:49:23 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\base\meta_tags.php 8
+ERROR - 2017-12-22 01:49:23 --> Severity: Notice  --> Undefined variable: title C:\xampp\htdocs\d9-client-portal\jp_app\views\payment_view.php 6
