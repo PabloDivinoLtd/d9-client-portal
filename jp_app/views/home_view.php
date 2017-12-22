@@ -25,6 +25,7 @@
                         <div class="heading-block nobottommargin nobottomborder">
                             <h2>Signup</h2>
                             <span>Register now to start your claims</span>
+                            <?php echo validation_errors(); ?> <?php echo $this->session->flashdata('msg');?>
                         </div>
                         <div class="line" style="margin: 20px 0 30px;"></div>
                         <div class="col_full <?php echo (form_error('username'))?'has-error':'';?>">
