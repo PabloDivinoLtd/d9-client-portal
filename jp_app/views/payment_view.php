@@ -21,23 +21,23 @@
         <div class="content-wrap">
             <div class="container clearfix">
                 <div class="row">
-                        <h3>Fill this form to start your claim.</h3>
-                        <div col-md-9>
-                            <div class="col_full <?php echo (form_error('full_name'))?'has-error':'';?>">
-                                <label for="register-form-full-name">Full Name:</label>
-                                <input type="text" id="full_name" name="full_name" value="<?php echo set_value('full_name'); ?>" placeholder="Your full name" class="form-control" />
-                                <?php echo form_error('full_name'); ?>
-                            </div>
-                            <div class="col_full <?php echo (form_error('slip_file'))?'has-error':'';?>">
-                                <label for="register-form-full-name">Full Name:</label>
-                                <input type="file" id="slip_file" name="slip_file" value="<?php echo set_value('slip_file'); ?>"  class="file" />
-                                <?php echo form_error('slip_file'); ?>
-                            </div>
-
-                            <div class="col_full nobottommargin">
-                                <button type="submit" class="button button-3d button-black nomargin" id="submit" name="submit" value="register">Claim Now</button>
-                            </div>
+                    <h3>Fill this form to start your claim.</h3>
+                    <div col-md-9>
+                        <div class="col_full <?php echo (form_error('full_name'))?'has-error':'';?>">
+                            <label for="register-form-full-name">Full Name:</label>
+                            <input type="text" id="full_name" name="full_name" value="<?php echo set_value('full_name'); ?>" placeholder="Your full name" class="form-control" />
+                            <?php echo form_error('full_name'); ?>
                         </div>
+                        <div class="col_full <?php echo (form_error('slip_file'))?'has-error':'';?>">
+                            <label for="register-form-full-name">Full Name:</label>
+                            <input type="file" id="slip_file" name="slip_file" value="<?php echo set_value('slip_file'); ?>"  class="file" />
+                            <?php echo form_error('slip_file'); ?>
+                        </div>
+
+                        <div class="col_full nobottommargin">
+                            <button type="submit" class="button button-3d button-black nomargin" id="submit" name="submit" value="register">Claim Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

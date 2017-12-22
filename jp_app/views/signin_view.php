@@ -25,7 +25,7 @@
 
                         <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;">
                             <div class="panel-body" style="padding: 40px;">
-                                <form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
+                                <form id="login-form" name="login-form" class="nobottommargin" action="" method="post">
                                     <h3>Login to your Account</h3>
                                     <?php if($msg):?>
                                         <div class="alert alert-danger"><?php echo $msg;?></div>
