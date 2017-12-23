@@ -317,7 +317,10 @@
 
                     <div class="center">
                         <h4 style="margin-bottom: 15px;">Have not paid?</h4>
-                        <a href="#" class="button button-rounded si-twitter si-colored">Pay now</a>
+                        <p style="font-size: 20px;color: #0044cc;font-weight: 700;">
+                        For us to facilitate your claim process, a refundable fee of $20 has been put in place as a requirement. To submit form, everyone must pay its equivalent in BTC.
+                        This being a legal process, please upload the paid bitcoin receipts for future reference.  <i style="color: #FF0000;">legal@d9clubclaimers.</i>
+                        </p>
                     </div>
 
                 </div>

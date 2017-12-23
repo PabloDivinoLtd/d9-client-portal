@@ -225,14 +225,14 @@ $config['encryption_key'] = 'JobPortal552#^1^#@!@#2343434';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'pp_sessions';
-$config['sess_expiration']		= 7200;
+$config['sess_cookie_name']		= 'ppsessions';
+$config['sess_expiration']		= 84200;
 $config['sess_expire_on_close']	= TRUE;
 $config['sess_encrypt_cookie']	= FALSE;
 $config['sess_use_database']	= TRUE;
 $config['sess_table_name']		= 'pp_sessions';
 $config['sess_match_ip']		= TRUE;
-$config['sess_match_useragent']	= TRUE;
+$config['sess_match_useragent']	= FALSE;
 $config['sess_time_to_update']	= 300;
 /*
 |--------------------------------------------------------------------------
@@ -245,8 +245,8 @@ $config['sess_time_to_update']	= 300;
 | 'cookie_secure' =  Cookies will only be set if a secure HTTPS connection exists.
 |
 */
-$config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
+$config['cookie_prefix']	= "bill";
+$config['cookie_domain']	= ".localhost";
 $config['cookie_path']		= "/";
 $config['cookie_secure']	= FALSE;
 /*
